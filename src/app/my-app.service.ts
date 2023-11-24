@@ -5,7 +5,7 @@ providedIn: 'root'
 })
 export class ApiService {
 constructor(private http: HttpClient ) { }
-rootURL = 'localhost:2600/api';
+rootURL = 'http://localhost:3080/api';
 getUsers() {
 return this.http.get(this.rootURL + '/users');
 }
